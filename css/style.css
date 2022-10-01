@@ -1,0 +1,54 @@
+:root {
+    --text-dark: #023047;
+    --second: #219ebc;
+    --accent: #fb8500;
+    --accent-active: #cc6d00;
+}
+
+.hero-header {
+    width: 100%;
+    height: 100vh;
+    background: url(/img/hero.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero-header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+}
+.navbar {
+    transition: 0.3s ease-in-out;
+}
+.navbar ul li a {
+    color: white !important;
+}
+.navbar ul li a.active {
+    color: var(--accent) !important;
+}
+.nav-transparent {
+
+}
+.btn-accent {
+    background-color: var(--accent);
+    color: white;
+}
+.btn-accent:hover, .btn-accent:focus, .btn-accent:active {
+    background-color: var(--accent-active) !important;
+    color: white !important;
+}
+
+.navbar-toggler {
+    color: white;
+    border: none;
+}
+.navbar-toggler .navbar-toggler-icon {
+    color: #cc6d00;
+}
