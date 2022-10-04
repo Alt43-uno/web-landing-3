@@ -6,5 +6,8 @@ $(document).ready(function(){
         else{
             $(".navbar").css({"background-color":"rgba(0,0,0,0.7)"});
         }
-    })
+    });
+    $(".navbar-toggler").click(function(){
+        $(".hamburger").toggleClass("is-active");
+    });
 })
